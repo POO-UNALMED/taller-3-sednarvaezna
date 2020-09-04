@@ -13,7 +13,11 @@ public class TV {
 		this.setMarca(marca1);
 		this.estado=estado1;
 	}
-
+	
+	public int getNumTV() {
+		return numTV;
+	}
+	
 	public Marca getMarca() {
 		return marca;
 	}
