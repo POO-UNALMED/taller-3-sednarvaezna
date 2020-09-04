@@ -60,7 +60,9 @@ public class TV {
 	}
 
 	public void setCanal(int canal) {
-		this.canal = canal;
+		if (this.estado && canal>=1 && canal <=120) {
+			this.canal = canal;
+		}
 	}
 	
 	public void turnOn() {
@@ -75,12 +77,12 @@ public class TV {
 	}
 	
 	public void canalUp() {
-		if(this.estado && this.canal>=0 && this.canal <120) {
+		if(this.estado && this.canal>=1 && this.canal <120) {
 			this.canal++;
 		}
 	}
 	public void canalDown() {
-		if(this.estado && this.canal>0 && this.canal <=120) {
+		if(this.estado && this.canal>1 && this.canal <=120) {
 			this.canal--;
 		}
 	}
