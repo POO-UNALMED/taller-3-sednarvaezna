@@ -15,11 +15,11 @@ public class TV {
 		TV.numTV++;
 	}
 	
-	public int getNumTV() {
+	public static int getNumTV() {
 		return numTV;
 	}
 	
-	public void setNumTV(int a) {
+	public static void setNumTV(int a) {
 		TV.numTV = a;
 	}
 	
